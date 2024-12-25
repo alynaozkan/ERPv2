@@ -1,0 +1,371 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ERP
+build_property.RootNamespace = ERP
+build_property.ProjectDir = C:\Users\Aleyna\source\repos\ERP\ERP\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Aleyna\source\repos\ERP\ERP
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Birimler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlyaW1sZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Birimler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlyaW1sZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Birimler/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlyaW1sZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Birimler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlyaW1sZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Birimler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlyaW1sZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Diller/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlsbGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Diller/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlsbGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Diller/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlsbGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Diller/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlsbGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Diller/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlsbGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Firmalar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFsYXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Firmalar/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFsYXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Firmalar/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFsYXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Firmalar/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFsYXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Firmalar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlybWFsYXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezKart/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpLYXJ0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezKart/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpLYXJ0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezKart/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpLYXJ0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezKart/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpLYXJ0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezKart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpLYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezTipi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpUaXBpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezTipi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpUaXBpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezTipi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpUaXBpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezTipi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpUaXBpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/IsMerkezTipi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNNZXJrZXpUaXBpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetKart/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldEthcnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetKart/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldEthcnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetKart/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldEthcnRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetKart/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldEthcnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetKart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldEthcnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetMerkezi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldE1lcmtlemlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetMerkezi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldE1lcmtlemlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetMerkezi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldE1lcmtlemlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetMerkezi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldE1lcmtlemlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MaliyetMerkezi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsaXlldE1lcmtlemlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeKart/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZUthcnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeKart/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZUthcnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeKart/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZUthcnRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeKart/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZUthcnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeKart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZUthcnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeTipi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZVRpcGlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeTipi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZVRpcGlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeTipi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZVRpcGlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeTipi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZVRpcGlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/MalzemeTipi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFsemVtZVRpcGlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/OperasyonTipi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFzeW9uVGlwaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/OperasyonTipi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFzeW9uVGlwaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/OperasyonTipi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFzeW9uVGlwaVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/OperasyonTipi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFzeW9uVGlwaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/OperasyonTipi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFzeW9uVGlwaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaKart/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YUthcnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaKart/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YUthcnRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaKart/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YUthcnRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaKart/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YUthcnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaKart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YUthcnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaTipi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YVRpcGlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaTipi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YVRpcGlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaTipi/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YVRpcGlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaTipi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YVRpcGlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/RotaTipi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm90YVRpcGlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Sehirler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VoaXJsZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Sehirler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VoaXJsZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Sehirler/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VoaXJsZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Sehirler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VoaXJsZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Sehirler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VoaXJsZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Ulkeler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWxrZWxlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Ulkeler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWxrZWxlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Ulkeler/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWxrZWxlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Ulkeler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWxrZWxlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Ulkeler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWxrZWxlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgacKart/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNLYXJ0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgacKart/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNLYXJ0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgacKart/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNLYXJ0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgacKart/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNLYXJ0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgacKart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNLYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgac/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgac/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgac/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgac/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/UrunAgac/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1bkFnYWNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleyna/source/repos/ERP/ERP/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4il4o0kkk4

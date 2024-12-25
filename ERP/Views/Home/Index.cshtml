@@ -1,0 +1,241 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="text-center mb-4">
+    <h1 class="display-4">Hoş Geldiniz</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 text-left mb-3">
+            <h2 class="font-weight-bold">Control</h2>
+        </div>
+        <div class="col-md-6 text-right mb-3">
+            <h2 class="font-weight-bold">Support</h2>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Sol Taraf -->
+        <div class="col-md-6">
+            <div class="row">
+                <!-- Malzeme Kart -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Malzeme Kart</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Malzeme Kart sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="MalzemeKart" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ürün Ağacı -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Ürün Ağacı</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Ürün Ağacı sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="UrunAgacKart" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Maliyet Merkezleri -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Maliyet Merkezleri</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Maliyet Merkezleri sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="MaliyetKart" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- İş Merkezleri -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>İş Merkezleri </h5>
+                        </div>
+                        <div class="card-body">
+                            <p>İş Merkezleri sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="İsMerkezKart" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Yeni Alan 3 -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Rotalar</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Rotalar sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="RotaKart" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sağ Taraf -->
+        <div class="col-md-6">
+            <div class="row">
+                <!-- Firmalar -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Firmalar</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Firmalar sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="Firmalar" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Malzeme Tipi -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Malzeme Tipi</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Malzeme Tipi sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="MalzemeTipi" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Ülkeler -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Ülkeler</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Ülkeler sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="Ulkeler" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Maliyet Merkezleri -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Maliyet Merkezleri</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Maliyet Merkezleri sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="MaliyetMerkezi" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Şehirler -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Şehirler</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Şehirler sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="Sehirler" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ürün Ağacı -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Ürün Ağacı</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Ürün Ağacı sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="UrunAgac" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Diller -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Diller</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Diller sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="Diller" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rota Tipi -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Rota Tipi</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Rota Tipi sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="RotaTipi" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Birimler -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Birimler</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Birimler sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="Birimler" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- İş Merkezi Tipi -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>İş Merkezi Tipi</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>İş Merkezi Tipi sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="IsMerkeziTipi" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Operasyon Tipi -->
+                <div class="col-md-6 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header bg-primary text-white">
+                            <h5>Operasyon Tipi</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Operasyon Tipi sayfasına gitmek için aşağıdaki düğmeye tıklayın.</p>
+                            <a asp-controller="OperasyonTipi" asp-action="Index" class="btn btn-primary">Git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

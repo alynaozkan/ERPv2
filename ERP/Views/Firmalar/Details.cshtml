@@ -1,0 +1,45 @@
+﻿@model ERP.Models.Kontrol.Genel.BSMGRNNMGEN001
+
+@{
+    ViewData["Title"] = "Firma Detayları";
+}
+
+<h1 class="mb-4">Firma Detayları</h1>
+
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h4>Firma Bilgileri</h4>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <tr>
+                <th>Firma Kodu</th>
+                <td>@Model.COMCODE</td>
+            </tr>
+            <tr>
+                <th>Firma Adı</th>
+                <td>@Model.COMTEXT</td>
+            </tr>
+            <tr>
+                <th>Adres 1</th>
+                <td>@Model.ADRESS1</td>
+            </tr>
+            <tr>
+                <th>Adres 2</th>
+                <td>@Model.ADRESS2</td>
+            </tr>
+            <tr>
+                <th>Şehir</th>
+                <td>@Model.CITY?.CITYCODE</td>
+            </tr>
+            <tr>
+                <th>Ülke</th>
+                <td>@Model.COUNTRY?.COUNTRYCODE</td>
+            </tr>
+        </table>
+        <div class="mt-3">
+            <a asp-action="Edit" asp-route-id="@Model.COMCODE" class="btn btn-warning">Düzenle</a>
+            <a asp-action="Index" class="btn btn-secondary">Geri Dön</a>
+        </div>
+    </div>
+</div>

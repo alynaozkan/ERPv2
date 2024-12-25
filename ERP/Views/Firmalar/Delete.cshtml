@@ -1,0 +1,40 @@
+﻿@model ERP.Models.Kontrol.Genel.BSMGRNNMGEN001
+@{
+    ViewData["Title"] = "Firma Sil";
+}
+
+<h1>Firma Sil</h1>
+
+<p>Bu firmayı silmek istediğinizden emin misiniz?</p>
+
+<table class="table">
+    <tr>
+        <th>Firma Kodu</th>
+        <td>@Model.COMCODE</td>
+    </tr>
+    <tr>
+        <th>Firma Adı</th>
+        <td>@Model.COMTEXT</td>
+    </tr>
+    <tr>
+        <th>Adres 1</th>
+        <td>@Model.ADRESS1</td>
+    </tr>
+    <tr>
+        <th>Adres 2</th>
+        <td>@Model.ADRESS2</td>
+    </tr>
+    <tr>
+        <th>Şehir Kodu</th>
+        <td>@Model.CITYCODE</td>
+    </tr>
+    <tr>
+        <th>Ülke Kodu</th>
+        <td>@Model.COUNTRYCODE</td>
+    </tr>
+</table>
+
+<form method="post" asp-action="DeleteConfirmed" asp-route-id="@Model.COMCODE">
+    <button type="submit" class="btn btn-danger">Sil</button>
+    <a asp-action="Index" class="btn btn-secondary">İptal</a>
+</form>

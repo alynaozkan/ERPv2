@@ -1,0 +1,155 @@
+﻿@model IEnumerable<ERP.Models.Veri.Malzeme.BSMGRNNMMATHEAD>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MATDOCFROM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MATDOCUNTIL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SUPPLYTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NETWEIGHT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BRUTWEIGHT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ISBOM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ISROUTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ROTDOCNUM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ISDELETED)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ISPASSIVE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MATSTEXT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MATLTEXT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSTUNIT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FNWUNIT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FBWUNIT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FCOMCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FMATDOCTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FBOMDOCNUM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FBOMDOCTYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FLANCODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FROTDOCTYPE)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MATDOCFROM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MATDOCUNTIL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SUPPLYTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NETWEIGHT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BRUTWEIGHT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ISBOM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ISROUTE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ROTDOCNUM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ISDELETED)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ISPASSIVE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MATSTEXT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MATLTEXT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FSTUNIT.UNITCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FNWUNIT.UNITCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FBWUNIT.UNITCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FCOMCODE.COMCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FMATDOCTYPE.DOCTYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FBOMDOCNUM.BOMDOCNUM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FBOMDOCTYPE.BOMDOCNUM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FLANCODE.LANCODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FROTDOCTYPE.DOCTYPE)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MATDOCNUM">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MATDOCNUM">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MATDOCNUM">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

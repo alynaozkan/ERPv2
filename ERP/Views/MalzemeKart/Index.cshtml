@@ -1,155 +1,76 @@
 ﻿@model IEnumerable<ERP.Models.Veri.Malzeme.BSMGRNNMMATHEAD>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Malzeme Kartları";
 }
 
-<h1>Index</h1>
+<h1 class="text-primary text-center mb-4">Malzeme Kartları</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+<div class="d-flex justify-content-end mb-3">
+    <a class="btn btn-success btn-lg shadow-sm" asp-action="Create">
+        <i class="fas fa-plus-circle"></i> Yeni Malzeme Kartı Oluştur
+    </a>
+</div>
+
+<table class="table table-striped table-hover table-bordered shadow-sm">
+    <thead class="table-dark">
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.MATDOCFROM)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MATDOCUNTIL)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SUPPLYTYPE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NETWEIGHT)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BRUTWEIGHT)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ISBOM)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ISROUTE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ROTDOCNUM)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ISDELETED)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ISPASSIVE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MATSTEXT)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MATLTEXT)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FSTUNIT)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FNWUNIT)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FBWUNIT)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FCOMCODE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FMATDOCTYPE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FBOMDOCNUM)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FBOMDOCTYPE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FLANCODE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FROTDOCTYPE)
-            </th>
-            <th></th>
+            <th>Firma Kodu</th>
+            <th>Malzeme Kodu</th>
+            <th>Malzeme Tipi</th>
+            <th>Geçerlilik Başlangıç</th>
+            <th>Malzeme Kısa Açıklaması</th>
+            <th>Malzeme Uzun Açıklaması</th>
+            <th>Dil Kodu</th>
+            <th>Geçerlilik Bitiş</th>
+            <th>Tedarik Tipi</th>
+            <th>Ürün Ağacı Var mı?</th>
+            <th>Rotası Var mı?</th>
+            <th class="text-center">İşlemler</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.MATDOCFROM)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MATDOCUNTIL)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SUPPLYTYPE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NETWEIGHT)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BRUTWEIGHT)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ISBOM)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ISROUTE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ROTDOCNUM)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ISDELETED)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ISPASSIVE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MATSTEXT)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MATLTEXT)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FSTUNIT.UNITCODE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FNWUNIT.UNITCODE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FBWUNIT.UNITCODE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FCOMCODE.COMCODE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FMATDOCTYPE.DOCTYPE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FBOMDOCNUM.BOMDOCNUM)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FBOMDOCTYPE.BOMDOCNUM)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FLANCODE.LANCODE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FROTDOCTYPE.DOCTYPE)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MATDOCNUM">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MATDOCNUM">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MATDOCNUM">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.FCOMCODE)</td>
+                <td>@Html.DisplayFor(modelItem => item.MATDOCNUM)</td>
+                <td>@Html.DisplayFor(modelItem => item.MATDOCTYPE)</td>
+                <td>@Html.DisplayFor(modelItem => item.MATDOCFROM)</td>
+                <td>@Html.DisplayFor(modelItem => item.MATSTEXT)</td>
+                <td>@Html.DisplayFor(modelItem => item.MATLTEXT)</td>
+                <td>@Html.DisplayFor(modelItem => item.LANCODE)</td>
+                <td>@Html.DisplayFor(modelItem => item.MATDOCUNTIL)</td>
+                <td>@Html.DisplayFor(modelItem => item.SUPPLYTYPE)</td>
+                <td>@Html.DisplayFor(modelItem => item.ISBOM)</td>
+                <td>@Html.DisplayFor(modelItem => item.ISROUTE)</td>
+                <td class="text-center">
+                    <a class="btn btn-primary btn-sm mx-1 shadow-sm" asp-action="Edit" asp-route-id="@item.MATDOCNUM">
+                        <i class="fas fa-edit"></i> Düzenle
+                    </a>
+                    <a class="btn btn-info btn-sm mx-1 shadow-sm" asp-action="Details" asp-route-id="@item.MATDOCNUM">
+                        <i class="fas fa-info-circle"></i> Detay
+                    </a>
+                    <a class="btn btn-danger btn-sm mx-1 shadow-sm" asp-action="Delete" asp-route-id="@item.MATDOCNUM">
+                        <i class="fas fa-trash-alt"></i> Sil
+                    </a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+<style>
+    .table-hover tbody tr:hover {
+        background-color: #f1f1f1;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn {
+        transition: all 0.2s ease-in-out;
+    }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+</style>

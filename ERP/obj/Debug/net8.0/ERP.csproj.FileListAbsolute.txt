@@ -282,3 +282,4 @@ C:\Users\Aleyna\source\repos\ERP\ERP\bin\Debug\net8.0\runtimes\win\lib\net7.0\Mi
 C:\Users\Aleyna\source\repos\ERP\ERP\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Aleyna\source\repos\ERP\ERP\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Aleyna\source\repos\ERP\ERP\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Aleyna\source\repos\ERP\ERP\obj\Debug\net8.0\ERP.sourcelink.json

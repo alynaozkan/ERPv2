@@ -1,27 +1,54 @@
 ﻿@model ERP.Models.Kontrol.Genel.BSMGRNNMGEN003
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Ülke Sil";
 }
 
-<h1>Delete</h1>
+<h1 class="text-danger text-center mb-4">Ülke Sil</h1>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>BSMGRNNMGEN003</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.COUNTRYNAME)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.COUNTRYNAME)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="COUNTRYCODE" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+<p class="text-center">Bu ülkeyi silmek istediğinizden emin misiniz?</p>
+
+<div class="card shadow-lg">
+    <div class="card-header bg-danger text-white">
+        <h4 class="mb-0">Ülke Bilgileri</h4>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <tr>
+                <th class="bg-light">Ülke Kodu</th>
+                <td>@Html.DisplayFor(model => model.COUNTRYCODE)</td>
+            </tr>
+            <tr>
+                <th class="bg-light">Ülke İsmi</th>
+                <td>@Html.DisplayFor(model => model.COUNTRYNAME)</td>
+            </tr>
+        </table>
+        <div class="mt-4 text-center">
+            <form asp-action="Delete" method="post">
+                <input type="hidden" asp-for="COUNTRYCODE" />
+                <button type="submit" class="btn btn-danger btn-lg shadow-sm">
+                    <i class="fas fa-trash-alt"></i> Sil
+                </button>
+                <a asp-action="Index" class="btn btn-secondary btn-lg shadow-sm ms-3">
+                    <i class="fas fa-arrow-left"></i> Listeye Geri Dön
+                </a>
+            </form>
+        </div>
+    </div>
 </div>
+
+<style>
+    table.table-bordered th {
+        text-align: left;
+        font-weight: 600;
+    }
+
+    table.table-bordered td {
+        font-weight: 500;
+    }
+
+    button:hover, a:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in-out;
+    }
+</style>

@@ -23,7 +23,7 @@ namespace ERP.Models.Veri.Malzeme
         public required string MATDOCTYPE { get; set; } //malzeme tipi
         public DateTime MATDOCFROM { get; set; } //geçerlilik
         public DateTime MATDOCUNTIL { get; set; } //geçer bitiş
-        public int SUPPLYTYPE { get; set; } //tedarik tipi
+        public int? SUPPLYTYPE { get; set; } //tedarik tipi
         public string? STUNIT { get; set; } //malzeme stok birimi gen5den
         public double NETWEIGHT { get; set; } //net agırlık
         public string NWUNIT { get; set; } //net agırlık birimi
@@ -33,6 +33,7 @@ namespace ERP.Models.Veri.Malzeme
         public required string BOMDOCNUM { get; set; }
         public required string BOMDOCTYPE { get; set; }
         public int ISROUTE { get; set; } //rota var mı
+
         [MaxLength(4)]
         public required string ROTDOCTYPE { get; set; } //rota tipi
         public string ROTDOCNUM { get; set; }  //rota numarası

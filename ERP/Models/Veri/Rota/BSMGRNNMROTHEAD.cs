@@ -32,7 +32,7 @@ namespace ERP.Models.Veri.Rota
         public required double MACHINETIME { get; set; }
         public required double LABOURTIME { get; set; }
         public required string BOMDOCNUM { get; set; } //ürün ağacı kod
-        public required string BOMDOCTYPE { get; set; } //ürün ağacı numara
+        public required string BOMDOCTYPE { get; set; } //ürün ağacı tip
         public int CONTENTNUM { get; set; } //içerik no
         public string COMPONENT { get; set; } //bileşen kodu
         public double QUANTITY { get; set; } 

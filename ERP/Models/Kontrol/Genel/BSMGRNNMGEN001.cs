@@ -13,18 +13,14 @@ namespace ERP.Models.Kontrol.Genel
         [MaxLength(80)]
         public required string COMTEXT { get; set; }
         [MaxLength(80)]
-        public required string ADRESS1 { get; set; }
+        public string? ADRESS1 { get; set; }
         [MaxLength(80)]
         public string? ADRESS2 { get; set; }
-        
-        // Foreign Key alanları
-        public required string? CITYCODE { get; set; }
+        public string? CITYCODE { get; set; }
+        public string? COUNTRYCODE { get; set; }
 
-        //[ForeignKey("CITYCODE")]
+        //nav
         public virtual BSMGRNNMGEN004? CITY { get; set; }
-        public required string COUNTRYCODE { get; set; }
-
-        //[ForeignKey("COUNTRYCODE")]
         public virtual BSMGRNNMGEN003? COUNTRY { get; set; }
 
     }

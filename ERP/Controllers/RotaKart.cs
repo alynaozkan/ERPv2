@@ -22,7 +22,7 @@ namespace ERP.Controllers
         // GET: RotaKart
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.BSMGRNNMROTHEAD.Include(b => b.FBOMDOCNUM).Include(b => b.FBOMDOCTYPE).Include(b => b.FCOMCODE).Include(b => b.FMATDOCNUM).Include(b => b.FMATDOCTYPE).Include(b => b.FROTDOCTYPE).Include(b => b.FWCMDOCNUM).Include(b => b.FWCMDOCTYPE);
+            var appDbContext = _context.BSMGRNNMROTHEAD.Include(b => b.FBOMDOCTYPE).Include(b => b.FCOMCODE).Include(b => b.FMATDOCTYPE).Include(b => b.FROTDOCTYPE).Include(b => b.FWCMDOCTYPE);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -35,13 +35,10 @@ namespace ERP.Controllers
             }
 
             var bSMGRNNMROTHEAD = await _context.BSMGRNNMROTHEAD
-                .Include(b => b.FBOMDOCNUM)
                 .Include(b => b.FBOMDOCTYPE)
                 .Include(b => b.FCOMCODE)
-                .Include(b => b.FMATDOCNUM)
                 .Include(b => b.FMATDOCTYPE)
                 .Include(b => b.FROTDOCTYPE)
-                .Include(b => b.FWCMDOCNUM)
                 .Include(b => b.FWCMDOCTYPE)
                 .FirstOrDefaultAsync(m => m.ROTDOCNUM == id);
             if (bSMGRNNMROTHEAD == null)
@@ -55,14 +52,11 @@ namespace ERP.Controllers
         // GET: RotaKart/Create
         public IActionResult Create()
         {
-            ViewData["BOMDOCNUM"] = new SelectList(_context.BSMGRNNMBOMHEAD, "BOMDOCNUM", "BOMDOCNUM");
-            ViewData["BOMDOCTYPE"] = new SelectList(_context.BSMGRNNMBOMHEAD, "BOMDOCNUM", "BOMDOCNUM");
+            ViewData["BOMDOCTYPE"] = new SelectList(_context.BSMGRNNMBOM001, "DOCTYPE", "DOCTYPE");
             ViewData["COMCODE"] = new SelectList(_context.BSMGRNNMGEN001, "COMCODE", "COMCODE");
-            ViewData["MATDOCNUM"] = new SelectList(_context.BSMGRNNMMATHEAD, "MATDOCNUM", "MATDOCNUM");
-            ViewData["MATDOCTYPE"] = new SelectList(_context.BSMGRNNMMATHEAD, "MATDOCNUM", "MATDOCNUM");
+            ViewData["MATDOCTYPE"] = new SelectList(_context.BSMGRNNMMAT001, "DOCTYPE", "DOCTYPE");
             ViewData["ROTDOCTYPE"] = new SelectList(_context.BSMGRNNMROT001, "DOCTYPE", "DOCTYPE");
-            ViewData["WCMDOCNUM"] = new SelectList(_context.BSMGRNNMWCMHEAD, "WCMDOCNUM", "WCMDOCNUM");
-            ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCMHEAD, "WCMDOCNUM", "WCMDOCNUM");
+            ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCM001, "DOCTYPE", "DOCTYPE");
             return View();
         }
 
@@ -71,7 +65,7 @@ namespace ERP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("COMCODE,ROTDOCNUM,ROTDOCTYPE,ROTDOCFROM,ROTDOCUNTIL,DRAWNUM,MATDOCTYPE,MATDOCNUM,OPRNUM,WCMDOCTYPE,WCMDOCNUM,SETUPTIME,MACHINETIME,LABOURTIME,BOMDOCNUM,BOMDOCTYPE,CONTENTNUM,COMPONENT,QUANTITY,ISDELETED,ISPASSIVE")] BSMGRNNMROTHEAD bSMGRNNMROTHEAD)
+        public async Task<IActionResult> Create([Bind("COMCODE,ROTDOCNUM,ROTDOCTYPE,ROTDOCFROM,ROTDOCUNTIL,MATDOCTYPE,MATDOCNUM,OPRNUM,WCMDOCTYPE,WCMDOCNUM,SETUPTIME,MACHINETIME,LABOURTIME,BOMDOCTYPE,BOMDOCNUM,DRAWNUM,CONTENTNUM,COMPONENT,QUANTITY,ISDELETED,ISPASSIVE")] BSMGRNNMROTHEAD bSMGRNNMROTHEAD)
         {
             if (ModelState.IsValid)
             {
@@ -79,14 +73,11 @@ namespace ERP.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BOMDOCNUM"] = new SelectList(_context.BSMGRNNMBOMHEAD, "BOMDOCNUM", "BOMDOCNUM", bSMGRNNMROTHEAD.BOMDOCNUM);
-            ViewData["BOMDOCTYPE"] = new SelectList(_context.BSMGRNNMBOMHEAD, "BOMDOCNUM", "BOMDOCNUM", bSMGRNNMROTHEAD.BOMDOCTYPE);
+            ViewData["BOMDOCTYPE"] = new SelectList(_context.BSMGRNNMBOM001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.BOMDOCTYPE);
             ViewData["COMCODE"] = new SelectList(_context.BSMGRNNMGEN001, "COMCODE", "COMCODE", bSMGRNNMROTHEAD.COMCODE);
-            ViewData["MATDOCNUM"] = new SelectList(_context.BSMGRNNMMATHEAD, "MATDOCNUM", "MATDOCNUM", bSMGRNNMROTHEAD.MATDOCNUM);
-            ViewData["MATDOCTYPE"] = new SelectList(_context.BSMGRNNMMATHEAD, "MATDOCNUM", "MATDOCNUM", bSMGRNNMROTHEAD.MATDOCTYPE);
+            ViewData["MATDOCTYPE"] = new SelectList(_context.BSMGRNNMMAT001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.MATDOCTYPE);
             ViewData["ROTDOCTYPE"] = new SelectList(_context.BSMGRNNMROT001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.ROTDOCTYPE);
-            ViewData["WCMDOCNUM"] = new SelectList(_context.BSMGRNNMWCMHEAD, "WCMDOCNUM", "WCMDOCNUM", bSMGRNNMROTHEAD.WCMDOCNUM);
-            ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCMHEAD, "WCMDOCNUM", "WCMDOCNUM", bSMGRNNMROTHEAD.WCMDOCTYPE);
+            ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCM001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.WCMDOCTYPE);
             return View(bSMGRNNMROTHEAD);
         }
 
@@ -103,14 +94,11 @@ namespace ERP.Controllers
             {
                 return NotFound();
             }
-            ViewData["BOMDOCNUM"] = new SelectList(_context.BSMGRNNMBOMHEAD, "BOMDOCNUM", "BOMDOCNUM", bSMGRNNMROTHEAD.BOMDOCNUM);
-            ViewData["BOMDOCTYPE"] = new SelectList(_context.BSMGRNNMBOMHEAD, "BOMDOCNUM", "BOMDOCNUM", bSMGRNNMROTHEAD.BOMDOCTYPE);
+            ViewData["BOMDOCTYPE"] = new SelectList(_context.BSMGRNNMBOM001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.BOMDOCTYPE);
             ViewData["COMCODE"] = new SelectList(_context.BSMGRNNMGEN001, "COMCODE", "COMCODE", bSMGRNNMROTHEAD.COMCODE);
-            ViewData["MATDOCNUM"] = new SelectList(_context.BSMGRNNMMATHEAD, "MATDOCNUM", "MATDOCNUM", bSMGRNNMROTHEAD.MATDOCNUM);
-            ViewData["MATDOCTYPE"] = new SelectList(_context.BSMGRNNMMATHEAD, "MATDOCNUM", "MATDOCNUM", bSMGRNNMROTHEAD.MATDOCTYPE);
+            ViewData["MATDOCTYPE"] = new SelectList(_context.BSMGRNNMMAT001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.MATDOCTYPE);
             ViewData["ROTDOCTYPE"] = new SelectList(_context.BSMGRNNMROT001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.ROTDOCTYPE);
-            ViewData["WCMDOCNUM"] = new SelectList(_context.BSMGRNNMWCMHEAD, "WCMDOCNUM", "WCMDOCNUM", bSMGRNNMROTHEAD.WCMDOCNUM);
-            ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCMHEAD, "WCMDOCNUM", "WCMDOCNUM", bSMGRNNMROTHEAD.WCMDOCTYPE);
+            ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCM001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.WCMDOCTYPE);
             return View(bSMGRNNMROTHEAD);
         }
 
@@ -119,7 +107,7 @@ namespace ERP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("COMCODE,ROTDOCNUM,ROTDOCTYPE,ROTDOCFROM,ROTDOCUNTIL,DRAWNUM,MATDOCTYPE,MATDOCNUM,OPRNUM,WCMDOCTYPE,WCMDOCNUM,SETUPTIME,MACHINETIME,LABOURTIME,BOMDOCNUM,BOMDOCTYPE,CONTENTNUM,COMPONENT,QUANTITY,ISDELETED,ISPASSIVE")] BSMGRNNMROTHEAD bSMGRNNMROTHEAD)
+        public async Task<IActionResult> Edit(string id, [Bind("COMCODE,ROTDOCNUM,ROTDOCTYPE,ROTDOCFROM,ROTDOCUNTIL,MATDOCTYPE,MATDOCNUM,OPRNUM,WCMDOCTYPE,WCMDOCNUM,SETUPTIME,MACHINETIME,LABOURTIME,BOMDOCTYPE,BOMDOCNUM,DRAWNUM,CONTENTNUM,COMPONENT,QUANTITY,ISDELETED,ISPASSIVE")] BSMGRNNMROTHEAD bSMGRNNMROTHEAD)
         {
             if (id != bSMGRNNMROTHEAD.ROTDOCNUM)
             {
@@ -146,14 +134,11 @@ namespace ERP.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BOMDOCNUM"] = new SelectList(_context.BSMGRNNMBOMHEAD, "BOMDOCNUM", "BOMDOCNUM", bSMGRNNMROTHEAD.BOMDOCNUM);
-            ViewData["BOMDOCTYPE"] = new SelectList(_context.BSMGRNNMBOMHEAD, "BOMDOCNUM", "BOMDOCNUM", bSMGRNNMROTHEAD.BOMDOCTYPE);
+            ViewData["BOMDOCTYPE"] = new SelectList(_context.BSMGRNNMBOM001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.BOMDOCTYPE);
             ViewData["COMCODE"] = new SelectList(_context.BSMGRNNMGEN001, "COMCODE", "COMCODE", bSMGRNNMROTHEAD.COMCODE);
-            ViewData["MATDOCNUM"] = new SelectList(_context.BSMGRNNMMATHEAD, "MATDOCNUM", "MATDOCNUM", bSMGRNNMROTHEAD.MATDOCNUM);
-            ViewData["MATDOCTYPE"] = new SelectList(_context.BSMGRNNMMATHEAD, "MATDOCNUM", "MATDOCNUM", bSMGRNNMROTHEAD.MATDOCTYPE);
+            ViewData["MATDOCTYPE"] = new SelectList(_context.BSMGRNNMMAT001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.MATDOCTYPE);
             ViewData["ROTDOCTYPE"] = new SelectList(_context.BSMGRNNMROT001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.ROTDOCTYPE);
-            ViewData["WCMDOCNUM"] = new SelectList(_context.BSMGRNNMWCMHEAD, "WCMDOCNUM", "WCMDOCNUM", bSMGRNNMROTHEAD.WCMDOCNUM);
-            ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCMHEAD, "WCMDOCNUM", "WCMDOCNUM", bSMGRNNMROTHEAD.WCMDOCTYPE);
+            ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCM001, "DOCTYPE", "DOCTYPE", bSMGRNNMROTHEAD.WCMDOCTYPE);
             return View(bSMGRNNMROTHEAD);
         }
 
@@ -166,13 +151,10 @@ namespace ERP.Controllers
             }
 
             var bSMGRNNMROTHEAD = await _context.BSMGRNNMROTHEAD
-                .Include(b => b.FBOMDOCNUM)
                 .Include(b => b.FBOMDOCTYPE)
                 .Include(b => b.FCOMCODE)
-                .Include(b => b.FMATDOCNUM)
                 .Include(b => b.FMATDOCTYPE)
                 .Include(b => b.FROTDOCTYPE)
-                .Include(b => b.FWCMDOCNUM)
                 .Include(b => b.FWCMDOCTYPE)
                 .FirstOrDefaultAsync(m => m.ROTDOCNUM == id);
             if (bSMGRNNMROTHEAD == null)
@@ -184,7 +166,7 @@ namespace ERP.Controllers
         }
 
         // POST: RotaKart/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {

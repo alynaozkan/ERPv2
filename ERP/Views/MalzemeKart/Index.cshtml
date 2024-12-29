@@ -33,7 +33,7 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@Html.DisplayFor(modelItem => item.FCOMCODE)</td>
+                <td>@(item.FCOMCODE?.COMCODE + "  " + item.FCOMCODE?.COMTEXT)</td> 
                 <td>@Html.DisplayFor(modelItem => item.MATDOCNUM)</td>
                 <td>@Html.DisplayFor(modelItem => item.MATDOCTYPE)</td>
                 <td>@Html.DisplayFor(modelItem => item.MATDOCFROM)</td>

@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using ERP.Models.Veri.Malzeme;
 using ERP.Models.Kontrol.UrunAgac;
+using ERP.Models.Kontrol.MalzemeBilgi;
 
 namespace ERP.Models.Veri.UrunAgac
 {
@@ -18,21 +19,22 @@ namespace ERP.Models.Veri.UrunAgac
 
         [MaxLength(4)]
         public required string BOMDOCTYPE { get; set; } //ürün ağacı tipi fk
-        public DateTime BOMDOCFROM { get; set; }
-        public DateTime BOMDOCUNTIL { get; set; }
-        public required string MATDOCNUM { get; set; }
+        public required DateTime BOMDOCFROM { get; set; }
+        public required DateTime BOMDOCUNTIL { get; set; }
+
+        [MaxLength(4)]
         public required string MATDOCTYPE { get; set; }
-        public double QUANTITY { get; set; }
-        public int CONTENTNUM { get; set; } // İçerik Numarası
-        public string COMPONENT { get; set; } //Bileşen Kodu
-        public int ISDELETED { get; set; }
-        public int ISPASSIVE { get; set; }
-        public string DRAWNUM { get; set; } // Çizim Numarası
+        public required string MATDOCNUM { get; set; }
+        public required double QUANTITY { get; set; }
+        public required int CONTENTNUM { get; set; } // İçerik Numarası
+        public required string COMPONENT { get; set; } //Bileşen Kodu
+        public int? ISDELETED { get; set; }
+        public int? ISPASSIVE { get; set; }
+        public string? DRAWNUM { get; set; } // Çizim Numarası
 
         public virtual BSMGRNNMGEN001? FCOMCODE { get; set; }
         public virtual BSMGRNNMBOM001? DOCTYPE { get; set; }
-        public virtual BSMGRNNMMATHEAD? FMATDOCNUM { get; set; }
-        public virtual BSMGRNNMMATHEAD? FMATDOCTYPE { get; set; }
+        public virtual BSMGRNNMMAT001? FMATDOCTYPE { get; set; }
 
     }
 }

@@ -12,7 +12,7 @@ namespace ERP.Models.Kontrol.UrunAgac
         public required string DOCTYPE { get; set; } //ÜRÜN AĞACI TİPİ
         [MaxLength(80)]
         public required string DOCTYPETEXT { get; set; }
-        public required int ISPASSIVE { get; set; }
+        public int? ISPASSIVE { get; set; }
 
         [MaxLength(4)]
         public required string COMCODE { get; set; } // Foreign Key

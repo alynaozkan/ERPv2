@@ -11,16 +11,16 @@ namespace ERP.Models.Kontrol.Genel
         public required string UNITCODE { get; set; } //Birim Kodu
         [MaxLength(80)]
         public required string UNITTEXT { get; set; } //Birim adı
-        public required int ISMAINUNIT { get; set; } //Ana Ağırlık Birimi
+        public int? ISMAINUNIT { get; set; } //Ana Ağırlık Birimi
 
         [MaxLength(3)]
-        public required string MAINUNITCODE { get; set; } //Ana Birim Kodu
+        public string? MAINUNITCODE { get; set; } //Ana Birim Kodu
 
         [MaxLength(4)]
-        public required string COMCODE { get; set; } // Foreign Key
+        public required string COMCODE { get; set; } 
 
         [ForeignKey("COMCODE")]
-        public virtual BSMGRNNMGEN001? FCOMCODE { get; set; } // Navigation Property
+        public virtual BSMGRNNMGEN001? FCOMCODE { get; set; } 
 
 
     }

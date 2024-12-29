@@ -81,7 +81,8 @@
 
             <div class="form-group mb-3">
                 <label asp-for="BOMDOCNUM" class="form-label">Ürün Ağacı Kodu</label>
-                <select asp-for="BOMDOCNUM" class="form-select" asp-items="ViewBag.BOMDOCNUM"></select>
+                <input asp-for="BOMDOCNUM" class="form-control" />
+                <span asp-validation-for="BOMDOCNUM" class="text-danger"></span>
             </div>
 
             <div class="form-group mb-3">

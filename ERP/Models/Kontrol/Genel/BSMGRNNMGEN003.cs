@@ -13,5 +13,6 @@ namespace ERP.Models.Kontrol.Genel
         [MaxLength(80)]
         public required string COUNTRYNAME { get; set; }
 
+
     }
 }

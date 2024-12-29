@@ -30,10 +30,15 @@
             @Html.DisplayFor(model => model.FCOMCODE.COMCODE)
         </dd>
     </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="DOCTYPE" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+
+    <form method="post" asp-action="DeleteConfirmed" asp-route-id="@Model.DOCTYPE">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-danger btn-lg shadow-sm">
+            <i class="fas fa-trash-alt"></i> Delete
+        </button>
+        <a asp-action="Index" class="btn btn-secondary btn-lg shadow-sm ms-3">
+            <i class="fas fa-arrow-left"></i> Back to List
+        </a>
     </form>
+
 </div>

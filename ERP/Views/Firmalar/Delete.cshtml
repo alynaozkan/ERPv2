@@ -40,6 +40,7 @@
         </table>
         <div class="mt-4 text-center">
             <form method="post" asp-action="DeleteConfirmed" asp-route-id="@Model.COMCODE">
+                @Html.AntiForgeryToken()
                 <button type="submit" class="btn btn-danger btn-lg shadow-sm">
                     <i class="fas fa-trash-alt"></i> Sil
                 </button>

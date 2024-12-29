@@ -12,9 +12,7 @@ namespace ERP.Models.Kontrol.Genel
         public required string CITYTEXT { get; set; }
 
         [MaxLength(4)]
-        public string? COUNTRYCODE { get; set; }
-
-        //[ForeignKey("COUNTRYCODE")]
+        public required string COUNTRYCODE { get; set; }
         public virtual BSMGRNNMGEN003? COUNTRY { get; set; }
 
     }

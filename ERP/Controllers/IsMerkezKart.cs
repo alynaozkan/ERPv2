@@ -22,7 +22,7 @@ namespace ERP.Controllers
         // GET: IsMerkezKart
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.BSMGRNNMWCMHEAD.Include(b => b.DOCTYPE).Include(b => b.FCCMDOCNUM).Include(b => b.FCCMDOCTYPE).Include(b => b.FCOMCODE).Include(b => b.FLANCODE);
+            var appDbContext = _context.BSMGRNNMWCMHEAD.Include(b => b.DOCTYPE).Include(b => b.FCCMDOCTYPE).Include(b => b.FCOMCODE).Include(b => b.FLANCODE);
             return View(await appDbContext.ToListAsync());
         }
 
@@ -36,7 +36,6 @@ namespace ERP.Controllers
 
             var bSMGRNNMWCMHEAD = await _context.BSMGRNNMWCMHEAD
                 .Include(b => b.DOCTYPE)
-                .Include(b => b.FCCMDOCNUM)
                 .Include(b => b.FCCMDOCTYPE)
                 .Include(b => b.FCOMCODE)
                 .Include(b => b.FLANCODE)
@@ -53,8 +52,7 @@ namespace ERP.Controllers
         public IActionResult Create()
         {
             ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCM001, "DOCTYPE", "DOCTYPE");
-            ViewData["CCMDOCNUM"] = new SelectList(_context.BSMGRNNMCCMHEAD, "CCMDOCNUM", "CCMDOCNUM");
-            ViewData["CCMDOCTYPE"] = new SelectList(_context.BSMGRNNMCCMHEAD, "CCMDOCNUM", "CCMDOCNUM");
+            ViewData["CCMDOCTYPE"] = new SelectList(_context.BSMGRNNMCCM001, "DOCTYPE", "DOCTYPE");
             ViewData["COMCODE"] = new SelectList(_context.BSMGRNNMGEN001, "COMCODE", "COMCODE");
             ViewData["LANCODE"] = new SelectList(_context.BSMGRNNMGEN002, "LANCODE", "LANCODE");
             return View();
@@ -65,7 +63,7 @@ namespace ERP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("COMCODE,WCMDOCNUM,WCMDOCTYPE,WCMDOCFROM,WCMDOCUNTIL,MAINWCMDOCTYPE,MAINWCMDOCNUM,CCMDOCNUM,CCMDOCTYPE,WORKTIME,ISDELETED,ISPASSIVE,WCMSTEXT,WCMLTWXT,LANCODE,OPRDOCTYPE")] BSMGRNNMWCMHEAD bSMGRNNMWCMHEAD)
+        public async Task<IActionResult> Create([Bind("COMCODE,WCMDOCNUM,WCMDOCTYPE,WCMDOCFROM,WCMDOCUNTIL,MAINWCMDOCTYPE,MAINWCMDOCNUM,CCMDOCTYPE,CCMDOCNUM,WORKTIME,ISDELETED,ISPASSIVE,WCMSTEXT,WCMLTWXT,LANCODE,OPRDOCTYPE")] BSMGRNNMWCMHEAD bSMGRNNMWCMHEAD)
         {
             if (ModelState.IsValid)
             {
@@ -74,8 +72,7 @@ namespace ERP.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCM001, "DOCTYPE", "DOCTYPE", bSMGRNNMWCMHEAD.WCMDOCTYPE);
-            ViewData["CCMDOCNUM"] = new SelectList(_context.BSMGRNNMCCMHEAD, "CCMDOCNUM", "CCMDOCNUM", bSMGRNNMWCMHEAD.CCMDOCNUM);
-            ViewData["CCMDOCTYPE"] = new SelectList(_context.BSMGRNNMCCMHEAD, "CCMDOCNUM", "CCMDOCNUM", bSMGRNNMWCMHEAD.CCMDOCTYPE);
+            ViewData["CCMDOCTYPE"] = new SelectList(_context.BSMGRNNMCCM001, "DOCTYPE", "DOCTYPE", bSMGRNNMWCMHEAD.CCMDOCTYPE);
             ViewData["COMCODE"] = new SelectList(_context.BSMGRNNMGEN001, "COMCODE", "COMCODE", bSMGRNNMWCMHEAD.COMCODE);
             ViewData["LANCODE"] = new SelectList(_context.BSMGRNNMGEN002, "LANCODE", "LANCODE", bSMGRNNMWCMHEAD.LANCODE);
             return View(bSMGRNNMWCMHEAD);
@@ -95,8 +92,7 @@ namespace ERP.Controllers
                 return NotFound();
             }
             ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCM001, "DOCTYPE", "DOCTYPE", bSMGRNNMWCMHEAD.WCMDOCTYPE);
-            ViewData["CCMDOCNUM"] = new SelectList(_context.BSMGRNNMCCMHEAD, "CCMDOCNUM", "CCMDOCNUM", bSMGRNNMWCMHEAD.CCMDOCNUM);
-            ViewData["CCMDOCTYPE"] = new SelectList(_context.BSMGRNNMCCMHEAD, "CCMDOCNUM", "CCMDOCNUM", bSMGRNNMWCMHEAD.CCMDOCTYPE);
+            ViewData["CCMDOCTYPE"] = new SelectList(_context.BSMGRNNMCCM001, "DOCTYPE", "DOCTYPE", bSMGRNNMWCMHEAD.CCMDOCTYPE);
             ViewData["COMCODE"] = new SelectList(_context.BSMGRNNMGEN001, "COMCODE", "COMCODE", bSMGRNNMWCMHEAD.COMCODE);
             ViewData["LANCODE"] = new SelectList(_context.BSMGRNNMGEN002, "LANCODE", "LANCODE", bSMGRNNMWCMHEAD.LANCODE);
             return View(bSMGRNNMWCMHEAD);
@@ -107,7 +103,7 @@ namespace ERP.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("COMCODE,WCMDOCNUM,WCMDOCTYPE,WCMDOCFROM,WCMDOCUNTIL,MAINWCMDOCTYPE,MAINWCMDOCNUM,CCMDOCNUM,CCMDOCTYPE,WORKTIME,ISDELETED,ISPASSIVE,WCMSTEXT,WCMLTWXT,LANCODE,OPRDOCTYPE")] BSMGRNNMWCMHEAD bSMGRNNMWCMHEAD)
+        public async Task<IActionResult> Edit(string id, [Bind("COMCODE,WCMDOCNUM,WCMDOCTYPE,WCMDOCFROM,WCMDOCUNTIL,MAINWCMDOCTYPE,MAINWCMDOCNUM,CCMDOCTYPE,CCMDOCNUM,WORKTIME,ISDELETED,ISPASSIVE,WCMSTEXT,WCMLTWXT,LANCODE,OPRDOCTYPE")] BSMGRNNMWCMHEAD bSMGRNNMWCMHEAD)
         {
             if (id != bSMGRNNMWCMHEAD.WCMDOCNUM)
             {
@@ -135,8 +131,7 @@ namespace ERP.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["WCMDOCTYPE"] = new SelectList(_context.BSMGRNNMWCM001, "DOCTYPE", "DOCTYPE", bSMGRNNMWCMHEAD.WCMDOCTYPE);
-            ViewData["CCMDOCNUM"] = new SelectList(_context.BSMGRNNMCCMHEAD, "CCMDOCNUM", "CCMDOCNUM", bSMGRNNMWCMHEAD.CCMDOCNUM);
-            ViewData["CCMDOCTYPE"] = new SelectList(_context.BSMGRNNMCCMHEAD, "CCMDOCNUM", "CCMDOCNUM", bSMGRNNMWCMHEAD.CCMDOCTYPE);
+            ViewData["CCMDOCTYPE"] = new SelectList(_context.BSMGRNNMCCM001, "DOCTYPE", "DOCTYPE", bSMGRNNMWCMHEAD.CCMDOCTYPE);
             ViewData["COMCODE"] = new SelectList(_context.BSMGRNNMGEN001, "COMCODE", "COMCODE", bSMGRNNMWCMHEAD.COMCODE);
             ViewData["LANCODE"] = new SelectList(_context.BSMGRNNMGEN002, "LANCODE", "LANCODE", bSMGRNNMWCMHEAD.LANCODE);
             return View(bSMGRNNMWCMHEAD);
@@ -152,7 +147,6 @@ namespace ERP.Controllers
 
             var bSMGRNNMWCMHEAD = await _context.BSMGRNNMWCMHEAD
                 .Include(b => b.DOCTYPE)
-                .Include(b => b.FCCMDOCNUM)
                 .Include(b => b.FCCMDOCTYPE)
                 .Include(b => b.FCOMCODE)
                 .Include(b => b.FLANCODE)
@@ -166,7 +160,7 @@ namespace ERP.Controllers
         }
 
         // POST: IsMerkezKart/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {

@@ -12,7 +12,7 @@ namespace ERP.Models.Kontrol.Maliyet
         public required string DOCTYPE { get; set; } //maliyet merkezi tipi
         [MaxLength(80)]
         public required string DOCTYPETEXT { get; set; }
-        public required int ISPASSIVE { get; set; }
+        public int? ISPASSIVE { get; set; }
 
         [MaxLength(4)]
         public required string COMCODE { get; set; } // Foreign Key

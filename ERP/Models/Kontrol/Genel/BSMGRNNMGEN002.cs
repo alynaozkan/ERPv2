@@ -9,12 +9,12 @@ namespace ERP.Models.Kontrol.Genel
         [Key]
         public required string LANCODE { get; set; }
         public required string LANTEXT { get; set; }
-        // Foreign Key alanı
+
         [MaxLength(4)]
-        public required string COMCODE { get; set; } // Foreign Key
+        public required string COMCODE { get; set; } 
 
         [ForeignKey("COMCODE")]
-        public virtual BSMGRNNMGEN001? FCOMCODE { get; set; } // Navigation Property
+        public virtual BSMGRNNMGEN001? FCOMCODE { get; set; } 
 
     }
 }

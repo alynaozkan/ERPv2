@@ -96,17 +96,10 @@ namespace ERP.Context
                 .HasForeignKey(w => w.WCMDOCTYPE) // Foreign Key
                 .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
 
-            // CCMDOCNUM ile BSMGRNNMCCMHEAD ilişkisi
-            modelBuilder.Entity<BSMGRNNMWCMHEAD>()
-                .HasOne(w => w.FCCMDOCNUM) // Navigation Property
-                .WithMany() // BSMGRNNMCCMHEAD birden fazla iş merkezine sahip olabilir
-                .HasForeignKey(w => w.CCMDOCNUM) // Foreign Key
-                .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
-
-            // CCMDOCTYPE ile BSMGRNNMCCMHEAD ilişkisi
+            //CCM1 
             modelBuilder.Entity<BSMGRNNMWCMHEAD>()
                 .HasOne(w => w.FCCMDOCTYPE) // Navigation Property
-                .WithMany() // BSMGRNNMCCMHEAD birden fazla iş merkezine sahip olabilir
+                .WithMany() 
                 .HasForeignKey(w => w.CCMDOCTYPE) // Foreign Key
                 .OnDelete(DeleteBehavior.Restrict); // Silme davranışı                                               
 
@@ -139,7 +132,7 @@ namespace ERP.Context
                                                     
             modelBuilder.Entity<BSMGRNNMMATHEAD>()
                 .HasOne(m => m.FCOMCODE) // Navigation Property
-                .WithMany() // BSMGRNNMGEN001 birden fazla BSMGRNNMMATTEXT ile ilişkili olabilir
+                .WithMany() 
                 .HasForeignKey(m => m.COMCODE) // Foreign Key
                 .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
 
@@ -156,12 +149,6 @@ namespace ERP.Context
                 .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
 
             modelBuilder.Entity<BSMGRNNMMATHEAD>()
-                .HasOne(r => r.FBOMDOCNUM) // Navigation Property
-                .WithMany()
-                .HasForeignKey(r => r.BOMDOCNUM) // Foreign Key
-                .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
-
-            modelBuilder.Entity<BSMGRNNMMATHEAD>()
                 .HasOne(r => r.FBOMDOCTYPE) // Navigation Property
                 .WithMany()
                 .HasForeignKey(r => r.BOMDOCTYPE) // Foreign Key
@@ -170,7 +157,7 @@ namespace ERP.Context
             // LANCODE ile BSMGRNNMGEN002 ilişkisi
             modelBuilder.Entity<BSMGRNNMMATHEAD>()
                 .HasOne(m => m.FLANCODE) // Navigation Property
-                .WithMany() // BSMGRNNMGEN002 birden fazla BSMGRNNMMATTEXT ile ilişkili olabilir
+                .WithMany() 
                 .HasForeignKey(m => m.LANCODE) // Foreign Key
                 .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
 
@@ -209,22 +196,10 @@ namespace ERP.Context
                 .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
 
             modelBuilder.Entity<BSMGRNNMROTHEAD>()
-               .HasOne(r => r.FMATDOCNUM) // Navigation Property
-               .WithMany()
-               .HasForeignKey(r => r.MATDOCNUM) // Foreign Key
-               .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
-
-            modelBuilder.Entity<BSMGRNNMROTHEAD>()
                .HasOne(r => r.FMATDOCTYPE) // Navigation Property
                .WithMany()
                .HasForeignKey(r => r.MATDOCTYPE) // Foreign Key
                .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
-
-            modelBuilder.Entity<BSMGRNNMROTHEAD>()
-                .HasOne(r => r.FBOMDOCNUM) // Navigation Property
-                .WithMany() 
-                .HasForeignKey(r => r.BOMDOCNUM) // Foreign Key
-                .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
     
             modelBuilder.Entity<BSMGRNNMROTHEAD>()
                 .HasOne(r => r.FBOMDOCTYPE) // Navigation Property
@@ -239,36 +214,22 @@ namespace ERP.Context
                 .HasForeignKey(r => r.WCMDOCTYPE) // Foreign Key
                 .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
 
-            // WCMDOCNUM ile BSMGRNNMWCMHEAD ilişkisi
-            modelBuilder.Entity<BSMGRNNMROTHEAD>()
-                .HasOne(r => r.FWCMDOCNUM) // Navigation Property
-                .WithMany()
-                .HasForeignKey(r => r.WCMDOCNUM) // Foreign Key
-                .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
-
             modelBuilder.Entity<BSMGRNNMBOMHEAD>()
                 .HasOne(b => b.DOCTYPE) // Navigation Property
-                .WithMany() // BSMGRNNMBOM001 birden fazla BSMGRNNMBOMHEAD ile ilişkili olabilir
+                .WithMany() 
                 .HasForeignKey(b => b.BOMDOCTYPE) // Foreign Key
                 .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
 
             modelBuilder.Entity<BSMGRNNMBOMHEAD>()
                 .HasOne(b => b.FCOMCODE) // Navigation Property
-                .WithMany() // BSMGRNNMGEN001 birden fazla BSMGRNNMBOMHEAD ile ilişkili olabilir
+                .WithMany()
                 .HasForeignKey(b => b.COMCODE) // Foreign Key
-                .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
-
-            // MATDOCNUM ile BSMGRNNMMATHEAD ilişkisi
-            modelBuilder.Entity<BSMGRNNMBOMHEAD>()
-                .HasOne(b => b.FMATDOCNUM) // Navigation Property
-                .WithMany() // BSMGRNNMMATHEAD birden fazla BSMGRNNMBOMHEAD ile ilişkili olabilir
-                .HasForeignKey(b => b.MATDOCNUM) // Foreign Key
-                .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
+                .OnDelete(DeleteBehavior.Restrict); // Silme dav
 
             // MATDOCTYPE ile BSMGRNNMMATHEAD ilişkisi
             modelBuilder.Entity<BSMGRNNMBOMHEAD>()
                 .HasOne(b => b.FMATDOCTYPE) // Navigation Property
-                .WithMany() // BSMGRNNMMATHEAD birden fazla BSMGRNNMBOMHEAD ile ilişkili olabilir
+                .WithMany() 
                 .HasForeignKey(b => b.MATDOCTYPE) // Foreign Key
                 .OnDelete(DeleteBehavior.Restrict); // Silme davranışı
 

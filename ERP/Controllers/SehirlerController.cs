@@ -142,7 +142,7 @@ namespace ERP.Controllers
         }
 
         // POST: Sehirler/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {

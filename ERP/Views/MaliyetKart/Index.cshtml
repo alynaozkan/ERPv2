@@ -22,7 +22,7 @@
             <th>Geçerlilik Bitiş</th>
             <th>Ana Maliyet Merkezi Kodu</th>
             <th>Ana Maliyet Merkezi Tipi</th>
-            <th>Maliyet Kartı Silindi mi?</th>
+            <th>Silindi mi?</th>
             <th>Pasif mi?</th>
             <th>Dil Kodu</th>
             <th>Tedarik Tipi</th>
@@ -43,8 +43,8 @@
                 <td>@Html.DisplayFor(modelItem => item.CCMDOCUNTIL)</td>
                 <td>@Html.DisplayFor(modelItem => item.MAINCCMDOCNUM)</td>
                 <td>@Html.DisplayFor(modelItem => item.MAINCCMDOCTYPE)</td>
-                <td>@Html.DisplayFor(modelItem => item.ISDELETED)</td>
-                <td>@Html.DisplayFor(modelItem => item.ISPASSIVE)</td>
+                <td>@Html.DisplayDelete(item.ISDELETED)</td>
+                <td>@Html.DisplayPassive(item.ISPASSIVE)</td>
                 <td>@Html.DisplayFor(modelItem => item.LANCODE)</td>
                 <td>@Html.DisplayFor(modelItem => item.CCMSTEXT)</td>
                 <td>@Html.DisplayFor(modelItem => item.CCMLTEXT)</td>
@@ -52,7 +52,7 @@
                     <a class="btn btn-primary btn-sm mx-1 shadow-sm" asp-action="Edit" asp-route-id="@item.CCMDOCNUM">
                         <i class="fas fa-edit"></i> Düzenle
                     </a>
-                    <a class="btn btn-info btn-sm mx-1 shadow-sm" asp-action="Details" asp-route-id="@item.CCMDOCNUM">
+                    <a class="btn btn-warning btn-sm mx-1 shadow-sm" asp-action="Details" asp-route-id="@item.CCMDOCNUM">
                         <i class="fas fa-info-circle"></i> Detay
                     </a>
                     <a class="btn btn-danger btn-sm mx-1 shadow-sm" asp-action="Delete" asp-route-id="@item.CCMDOCNUM">

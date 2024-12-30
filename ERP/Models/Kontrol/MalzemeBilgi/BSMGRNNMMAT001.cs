@@ -12,6 +12,7 @@ namespace ERP.Models.Kontrol.MalzemeBilgi
         public required string DOCTYPE { get; set; } //Malzeme tipi
         [MaxLength(80)]
         public required string DOCTYPETEXT { get; set; } //mal tip açıklaması
+        [ZeroOrOne]
         public int? ISPASSIVE { get; set; }
         [MaxLength(4)]
         public required string COMCODE { get; set; } // Foreign Key

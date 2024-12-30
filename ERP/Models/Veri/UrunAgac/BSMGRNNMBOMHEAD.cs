@@ -28,7 +28,9 @@ namespace ERP.Models.Veri.UrunAgac
         public required double QUANTITY { get; set; }
         public required int CONTENTNUM { get; set; } // İçerik Numarası
         public required string COMPONENT { get; set; } //Bileşen Kodu
+        [ZeroOrOne]
         public int? ISDELETED { get; set; }
+        [ZeroOrOne]
         public int? ISPASSIVE { get; set; }
         public string? DRAWNUM { get; set; } // Çizim Numarası
 

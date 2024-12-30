@@ -40,8 +40,10 @@ namespace ERP.Models.Veri.Rota
         public string DRAWNUM { get; set; } //çizim no
         public required int CONTENTNUM { get; set; } //içerik no
         public required string COMPONENT { get; set; } //bileşen kodu
-        public required double QUANTITY { get; set; } 
+        public required double QUANTITY { get; set; }
+        [ZeroOrOne]
         public int? ISDELETED { get; set; }
+        [ZeroOrOne]
         public int? ISPASSIVE { get; set; }
 
         public virtual BSMGRNNMGEN001? FCOMCODE { get; set; }

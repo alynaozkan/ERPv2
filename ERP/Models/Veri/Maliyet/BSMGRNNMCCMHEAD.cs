@@ -20,8 +20,10 @@ namespace ERP.Models.Veri.Maliyet
         public required DateTime CCMDOCFROM { get; set; }
         public required DateTime CCMDOCUNTIL { get; set; }
         public required string MAINCCMDOCNUM { get; set; }
-        public required string MAINCCMDOCTYPE { get; set; }  
+        public required string MAINCCMDOCTYPE { get; set; }
+        [ZeroOrOne]
         public int? ISDELETED { get; set; }
+        [ZeroOrOne]
         public int? ISPASSIVE { get; set; }
         public required string LANCODE { get; set; }
         public required string CCMSTEXT { get; set; }

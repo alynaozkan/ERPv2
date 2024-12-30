@@ -12,6 +12,7 @@ namespace ERP.Models.Kontrol.UrunAgac
         public required string DOCTYPE { get; set; } //ÜRÜN AĞACI TİPİ
         [MaxLength(80)]
         public required string DOCTYPETEXT { get; set; }
+        [ZeroOrOne]
         public int? ISPASSIVE { get; set; }
 
         [MaxLength(4)]

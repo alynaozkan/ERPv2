@@ -26,7 +26,7 @@
         {
             <tr>
                 <td>@Html.DisplayFor(modelItem => item.DOCTYPETEXT)</td>
-                <td>@Html.DisplayFor(modelItem => item.ISPASSIVE)</td>
+                <td>@Html.DisplayPassive(item.ISPASSIVE)</td>
                 <td>@Html.DisplayFor(modelItem => item.FCOMCODE.COMCODE)</td>
                 <td class="text-center">
                     <a class="btn btn-primary btn-sm mx-1 shadow-sm" asp-action="Edit" asp-route-id="@item.DOCTYPE">

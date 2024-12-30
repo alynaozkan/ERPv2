@@ -29,7 +29,9 @@ namespace ERP.Models.Veri.IsMerkez
         public required string CCMDOCTYPE { get; set; }
         public required string CCMDOCNUM { get; set; }
         public double? WORKTIME { get; set; }
+        [ZeroOrOne]
         public int? ISDELETED { get; set; }
+        [ZeroOrOne]
         public int? ISPASSIVE { get; set; }
         public required string WCMSTEXT { get; set; } //İş Merkezi Kısa Açıklaması
         public required string WCMLTWXT { get; set; }

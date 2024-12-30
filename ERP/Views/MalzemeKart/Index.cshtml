@@ -41,14 +41,14 @@
                 <td>@Html.DisplayFor(modelItem => item.MATLTEXT)</td>
                 <td>@Html.DisplayFor(modelItem => item.LANCODE)</td>
                 <td>@Html.DisplayFor(modelItem => item.MATDOCUNTIL)</td>
-                <td>@Html.DisplayFor(modelItem => item.SUPPLYTYPE)</td>
-                <td>@Html.DisplayFor(modelItem => item.ISBOM)</td>
-                <td>@Html.DisplayFor(modelItem => item.ISROUTE)</td>
+                <td>@Html.DisplaySupply(item.SUPPLYTYPE)</td>
+                <td>@Html.DisplayBom(item.ISBOM)</td>
+                <td>@Html.DisplayRoute(item.ISROUTE)</td>
                 <td class="text-center">
                     <a class="btn btn-primary btn-sm mx-1 shadow-sm" asp-action="Edit" asp-route-id="@item.MATDOCNUM">
                         <i class="fas fa-edit"></i> Düzenle
                     </a>
-                    <a class="btn btn-info btn-sm mx-1 shadow-sm" asp-action="Details" asp-route-id="@item.MATDOCNUM">
+                    <a class="btn btn-warning btn-sm mx-1 shadow-sm" asp-action="Details" asp-route-id="@item.MATDOCNUM">
                         <i class="fas fa-info-circle"></i> Detay
                     </a>
                     <a class="btn btn-danger btn-sm mx-1 shadow-sm" asp-action="Delete" asp-route-id="@item.MATDOCNUM">

@@ -23,8 +23,8 @@
             <th>Malzeme Kodu</th>
             <th>Malzeme Tipi</th>
             <th>İçerik Numarası</th>
-            <th>Bileşen Kodu</th>
-            <th>Ürün Ağacı Silindi mi?</th>
+            <th>Bileşen</th>
+            <th>Silindi mi?</th>
             <th>Pasif mi?</th>
             <th>Çizim Numarası</th>
             <th class="text-center">İşlemler</th>
@@ -41,17 +41,16 @@
                 <td>@Html.DisplayFor(modelItem => item.BOMDOCUNTIL)</td>
                 <td>@Html.DisplayFor(modelItem => item.MATDOCNUM)</td>
                 <td>@Html.DisplayFor(modelItem => item.MATDOCTYPE)</td>
-                <td>@Html.DisplayFor(modelItem => item.QUANTITY)</td>
                 <td>@Html.DisplayFor(modelItem => item.CONTENTNUM)</td>
                 <td>@Html.DisplayFor(modelItem => item.COMPONENT)</td>
-                <td>@Html.DisplayFor(modelItem => item.ISDELETED)</td>
-                <td>@Html.DisplayFor(modelItem => item.ISPASSIVE)</td>
+                <td>@Html.DisplayDelete(item.ISDELETED)</td>
+                <td>@Html.DisplayPassive(item.ISPASSIVE)</td>
                 <td>@Html.DisplayFor(modelItem => item.DRAWNUM)</td>
                 <td class="text-center">
                     <a class="btn btn-primary btn-sm mx-1 shadow-sm" asp-action="Edit" asp-route-id="@item.BOMDOCNUM">
                         <i class="fas fa-edit"></i> Düzenle
                     </a>
-                    <a class="btn btn-info btn-sm mx-1 shadow-sm" asp-action="Details" asp-route-id="@item.BOMDOCNUM">
+                    <a class="btn btn-warning btn-sm mx-1 shadow-sm" asp-action="Details" asp-route-id="@item.BOMDOCNUM">
                         <i class="fas fa-info-circle"></i> Detay
                     </a>
                     <a class="btn btn-danger btn-sm mx-1 shadow-sm" asp-action="Delete" asp-route-id="@item.BOMDOCNUM">

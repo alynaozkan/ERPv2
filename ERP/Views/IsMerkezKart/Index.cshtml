@@ -15,21 +15,22 @@
 <table class="table table-striped table-hover table-bordered shadow-sm">
     <thead class="table-dark">
         <tr>
+            <th>İş Merkezi No</th>
+            <th>İş Merkezi Tipi</th>
             <th>Geçerlilik Başlangıç</th>
             <th>Geçerlilik Bitiş</th>
             <th>Ana İş Merkezi Kodu</th>
             <th>Ana İş Merkezi Tipi</th>
-            <th>Günlük Çalışma Süresi</th>
+            <th>Çalışma Süresi</th>
             <th>İş Merkezi Silindi mi?</th>
+            <th>Pasif mi?</th>
             <th>İş Merkezi Kısa Açıklaması</th>
             <th>İş Merkezi Uzun Açıklaması</th>
             <th>Operasyon Kodu</th>
-            <th>Pasif mi?</th>
             <th>Firma Kodu</th>
             <th>Maliyet Merkezi Kodu</th>
             <th>Maliyet Merkezi Tipi</th>
             <th>Dil Kodu</th>
-
             <th class="text-center">İşlemler</th>
         </tr>
     </thead>
@@ -37,26 +38,27 @@
         @foreach (var item in Model)
         {
             <tr>
+                <td>@Html.DisplayFor(modelItem => item.WCMDOCNUM)</td>
+                <td>@Html.DisplayFor(modelItem => item.WCMDOCTYPE)</td>
                 <td>@Html.DisplayFor(modelItem => item.WCMDOCFROM)</td>
                 <td>@Html.DisplayFor(modelItem => item.WCMDOCUNTIL)</td>
                 <td>@Html.DisplayFor(modelItem => item.MAINWCMDOCTYPE)</td>
                 <td>@Html.DisplayFor(modelItem => item.MAINWCMDOCNUM)</td>
                 <td>@Html.DisplayFor(modelItem => item.WORKTIME)</td>
-                <td>@Html.DisplayFor(modelItem => item.ISDELETED)</td>
-                <td>@Html.DisplayFor(modelItem => item.ISPASSIVE)</td>
+                <td>@Html.DisplayDelete(item.ISDELETED)</td>
+                <td>@Html.DisplayPassive(item.ISPASSIVE)</td>
                 <td>@Html.DisplayFor(modelItem => item.WCMSTEXT)</td>
                 <td>@Html.DisplayFor(modelItem => item.WCMLTWXT)</td>
                 <td>@Html.DisplayFor(modelItem => item.OPRDOCTYPE)</td>
                 <td>@Html.DisplayFor(modelItem => item.FCOMCODE.COMCODE)</td>
-                <td>@Html.DisplayFor(modelItem => item.DOCTYPE.DOCTYPE)</td>
                 <td>@Html.DisplayFor(modelItem => item.CCMDOCNUM)</td>
-                <td>@Html.DisplayFor(modelItem => item.FCCMDOCTYPE.DOCTYPE)</td>
+                <td>@Html.DisplayFor(modelItem => item.CCMDOCTYPE)</td>
                 <td>@Html.DisplayFor(modelItem => item.FLANCODE.LANCODE)</td>
                 <td class="text-center">
                     <a class="btn btn-primary btn-sm mx-1 shadow-sm" asp-action="Edit" asp-route-id="@item.WCMDOCNUM">
                         <i class="fas fa-edit"></i> Düzenle
                     </a>
-                    <a class="btn btn-info btn-sm mx-1 shadow-sm" asp-action="Details" asp-route-id="@item.WCMDOCNUM">
+                    <a class="btn btn-warning btn-sm mx-1 shadow-sm" asp-action="Details" asp-route-id="@item.WCMDOCNUM">
                         <i class="fas fa-info-circle"></i> Detay
                     </a>
                     <a class="btn btn-danger btn-sm mx-1 shadow-sm" asp-action="Delete" asp-route-id="@item.WCMDOCNUM">

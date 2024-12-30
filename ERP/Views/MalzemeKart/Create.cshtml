@@ -91,9 +91,12 @@
             </div>
 
             <div class="form-group mb-3">
-                <label asp-for="ISROUTE" class="form-label">Rotası Var mı?</label>
-                <input asp-for="ISROUTE" class="form-control" />
-                <span asp-validation-for="ISROUTE" class="text-danger"></span>
+                <label for="ISROUTE">Rotası var mı?</label>
+                <select asp-for="ISROUTE" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                </select>
+
             </div>
 
             <div class="form-group mb-3">
@@ -114,9 +117,11 @@
             </div>
 
             <div class="form-group mb-3">
-                <label asp-for="ISPASSIVE" class="form-label">Pasif mi?</label>
-                <input asp-for="ISPASSIVE" class="form-control" />
-                <span asp-validation-for="ISPASSIVE" class="text-danger"></span>
+                <label for="ISPASSIVE">Pasif mi?</label>
+                <select asp-for="ISPASSIVE" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                </select>
             </div>
 
             <div class="form-group mb-3">

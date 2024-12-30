@@ -14,6 +14,7 @@ namespace ERP.Models.Kontrol.Genel
         public int? ISMAINUNIT { get; set; } //Ana Ağırlık Birimi
 
         [MaxLength(3)]
+        [ZeroOrOne]
         public string? MAINUNITCODE { get; set; } //Ana Birim Kodu
 
         [MaxLength(4)]

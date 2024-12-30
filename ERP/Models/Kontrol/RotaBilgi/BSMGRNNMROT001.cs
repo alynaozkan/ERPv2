@@ -12,6 +12,7 @@ namespace ERP.Models.Kontrol.RotaBilgi
         public required string DOCTYPE { get; set; } //Rota Tipi
         [MaxLength(80)]
         public required string DOCTYPETEXT { get; set; }
+        [ZeroOrOne]
         public int? ISPASSIVE { get; set; }
         [MaxLength(4)]
         public required string COMCODE { get; set; } // Foreign Key

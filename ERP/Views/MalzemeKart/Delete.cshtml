@@ -1,147 +1,103 @@
 ﻿@model ERP.Models.Veri.Malzeme.BSMGRNNMMATHEAD
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Malzeme Kartı Sil";
 }
 
-<h1>Delete</h1>
+<h1 class="text-center text-danger mb-4">Malzeme Kartı Sil</h1>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>BSMGRNNMMATHEAD</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MATDOCFROM)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MATDOCFROM)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MATDOCUNTIL)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MATDOCUNTIL)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SUPPLYTYPE)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SUPPLYTYPE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NETWEIGHT)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NETWEIGHT)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.BRUTWEIGHT)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BRUTWEIGHT)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ISBOM)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ISBOM)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ISROUTE)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ISROUTE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ROTDOCNUM)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ROTDOCNUM)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ISDELETED)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ISDELETED)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ISPASSIVE)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ISPASSIVE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MATSTEXT)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MATSTEXT)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MATLTEXT)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MATLTEXT)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FSTUNIT)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FSTUNIT.UNITCODE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FNWUNIT)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FNWUNIT.UNITCODE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FBWUNIT)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FBWUNIT.UNITCODE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FCOMCODE)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FCOMCODE.COMCODE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FMATDOCTYPE)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FMATDOCTYPE.DOCTYPE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.BOMDOCNUM)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BOMDOCNUM)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FBOMDOCTYPE)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FBOMDOCTYPE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FLANCODE)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FLANCODE.LANCODE)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FROTDOCTYPE)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FROTDOCTYPE.DOCTYPE)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="MATDOCNUM" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+<h3 class="text-center">Bu kaydı silmek istediğinizden emin misiniz?</h3>
+<div class="card shadow-lg mb-4">
+    <div class="card-header bg-danger text-white">
+        <h5>Silinecek Kayıt Bilgileri</h5>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-4 fw-bold text-secondary">Geçerlilik Başlangıç:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.MATDOCFROM)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Geçerlilik Bitiş:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.MATDOCUNTIL)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Tedarik Tipi:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.SUPPLYTYPE)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Net Ağırlık:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.NETWEIGHT)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Brüt Ağırlık:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.BRUTWEIGHT)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Silindi mi?</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISDELETED)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Pasif mi?</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISPASSIVE)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Firma Kodu:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.FCOMCODE.COMCODE)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Malzeme Tipi:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.FMATDOCTYPE.DOCTYPE)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Ürün Ağacı Kodu:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.BOMDOCNUM)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Dil Kodu:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.FLANCODE.LANCODE)</dd>
+        </dl>
+    </div>
+</div>
+
+<div class="mt-4 text-center">
+    <form method="post" asp-action="DeleteConfirmed" asp-route-id="@Model.MATDOCNUM">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-danger btn-lg shadow-sm">
+            <i class="fas fa-trash-alt"></i> Sil
+        </button>
+        <a asp-action="Index" class="btn btn-secondary btn-lg shadow-sm ms-3">
+            <i class="fas fa-arrow-left"></i> Listeye Geri Dön
+        </a>
     </form>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    .card {
+        border-radius: 15px;
+        border: 1px solid #dee2e6;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        transition: 0.2s ease-in-out;
+    }
+
+    dt {
+        font-weight: bold;
+    }
+
+    dd {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+        dd:last-child {
+            border-bottom: none;
+        }
+
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    form button:hover {
+        background-color: #dc3545;
+        color: white;
+    }
+</style>

@@ -23,23 +23,30 @@ namespace ERP.Models.Veri.Malzeme
         public required string MATDOCTYPE { get; set; } //malzeme tipi
         public required DateTime MATDOCFROM { get; set; } //geçerlilik
         public required DateTime MATDOCUNTIL { get; set; } //geçer bitiş
+        [ZeroOrOne]
         public required int SUPPLYTYPE { get; set; } //tedarik tipi
         public required string STUNIT { get; set; } //malzeme stok birimi gen5den
         public double? NETWEIGHT { get; set; } //net agırlık
         public string? NWUNIT { get; set; } //net agırlık birimi
         public double? BRUTWEIGHT { get; set; }  //brüt ağırlık
         public string? BWUNIT { get; set; } //brut agırlık birimi
+
+        [Range(0, 2, ErrorMessage = "Sadece 0, 1 veya 2 girilebilir.")]
         public int? ISBOM { get; set; } //ürün agacı var mı
 
         [MaxLength(4)]
         public  string? BOMDOCTYPE { get; set; }
         public  string? BOMDOCNUM { get; set; }
+
+        [Range(0, 2, ErrorMessage = "Sadece 0, 1 veya 2 girilebilir.")]
         public int? ISROUTE { get; set; } //rota var mı
 
         [MaxLength(4)]
         public  string? ROTDOCTYPE { get; set; } //rota tipi
         public string? ROTDOCNUM { get; set; }  //rota numarası
+        [ZeroOrOne]
         public int? ISDELETED { get; set; }
+        [ZeroOrOne]
         public int? ISPASSIVE { get; set; }
         public required string LANCODE { get; set; } //dil kodu
         public required string MATSTEXT { get; set; } //malzeme kısa açıklama

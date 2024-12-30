@@ -12,6 +12,7 @@ namespace ERP.Models.Kontrol.Maliyet
         public required string DOCTYPE { get; set; } //maliyet merkezi tipi
         [MaxLength(80)]
         public required string DOCTYPETEXT { get; set; }
+        [ZeroOrOne]
         public int? ISPASSIVE { get; set; }
 
         [MaxLength(4)]

@@ -23,9 +23,11 @@
                 <span asp-validation-for="DOCTYPETEXT" class="text-danger"></span>
             </div>
             <div class="form-group mb-3">
-                <label asp-for="ISPASSIVE" class="form-label">Pasif mi?</label>
-                <input asp-for="ISPASSIVE" class="form-control" placeholder="Pasif Durumu Girin" />
-                <span asp-validation-for="ISPASSIVE" class="text-danger"></span>
+                <label for="ISPASSIVE">Pasif mi?</label>
+                <select asp-for="ISPASSIVE" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                </select>
             </div>
             <div class="form-group mb-3">
                 <label asp-for="COMCODE" class="form-label">Firma Kodu</label>

@@ -39,11 +39,13 @@
             <span asp-validation-for="MATDOCUNTIL" class="text-danger"></span>
         </div>
 
-        <div class="form-group mb-3">
-            <label asp-for="SUPPLYTYPE" class="form-label">Tedarik Tipi</label>
-            <input asp-for="SUPPLYTYPE" class="form-control" />
-            <span asp-validation-for="SUPPLYTYPE" class="text-danger"></span>
-        </div>
+            <div class="col-md-6">
+                <label for="SUPPLYTYPE" class="form-label">Tedarik Tipi</label>
+                <select asp-for="SUPPLYTYPE" class="form-control">
+                    <option value="0">Satın Alınan</option>
+                    <option value="1">Üretilen</option>
+                </select>
+            </div>
 
         <div class="form-group mb-3">
             <label asp-for="STUNIT" class="form-label">Malzeme Stok Birimi</label>
@@ -72,11 +74,14 @@
             <select asp-for="BWUNIT" class="form-select" asp-items="ViewBag.BWUNIT"></select>
         </div>
 
-        <div class="form-group mb-3">
-            <label asp-for="ISBOM" class="form-label">Ürün Ağacı Var mı?</label>
-            <input asp-for="ISBOM" class="form-control" />
-            <span asp-validation-for="ISBOM" class="text-danger"></span>
-        </div>
+            <div class="col-md-6">
+                <label for="ISBOM">Ürün Ağacı Var mı?</label>
+                <select asp-for="ISBOM" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                    <option value="2">Olmayacak</option>
+                </select>
+            </div>
 
         <div class="form-group mb-3">
             <label asp-for="BOMDOCNUM" class="form-label">Ürün Ağacı Kodu</label>
@@ -89,11 +94,14 @@
             <select asp-for="BOMDOCTYPE" class="form-select" asp-items="ViewBag.BOMDOCTYPE"></select>
         </div>
 
-        <div class="form-group mb-3">
-            <label asp-for="ISROUTE" class="form-label">Rotası Var mı?</label>
-            <input asp-for="ISROUTE" class="form-control" />
-            <span asp-validation-for="ISROUTE" class="text-danger"></span>
-        </div>
+            <div class="col-md-6">
+                <label for="ISROUTE">Rotası var mı?</label>
+                <select asp-for="ISROUTE" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                    <option value="2">Olmayacak</option>
+                </select>
+            </div>
 
         <div class="form-group mb-3">
             <label asp-for="ROTDOCTYPE" class="form-label">Rota Tipi</label>
@@ -106,19 +114,21 @@
             <span asp-validation-for="ROTDOCNUM" class="text-danger"></span>
         </div>
 
-        <div class="form-group mb-3">
-            <label asp-for="ISDELETED" class="form-label">Silindi mi?</label>
-            <input asp-for="ISDELETED" class="form-control" />
-            <span asp-validation-for="ISDELETED" class="text-danger"></span>
-        </div>
+            <div class="col-md-6">
+                <label for="ISDELETED">Silindi mi?</label>
+                <select asp-for="ISDELETED" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                </select>
+            </div>
 
-        <div class="form-group mb-3">
+            <div class="col-md-6">
                 <label for="ISPASSIVE">Pasif mi?</label>
                 <select asp-for="ISPASSIVE" class="form-control">
                     <option value="1">Evet</option>
                     <option value="0">Hayır</option>
                 </select>
-        </div>
+            </div>
 
         <div class="form-group mb-3">
             <label asp-for="LANCODE" class="form-label">Dil Kodu</label>

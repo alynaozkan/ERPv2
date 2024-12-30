@@ -78,18 +78,20 @@
                 <span asp-validation-for="WORKTIME" class="text-danger"></span>
             </div>
 
-            <!-- 11. Silindi mi? -->
             <div class="form-group mb-3">
-                <label asp-for="ISDELETED" class="control-label">Silindi mi?</label>
-                <input asp-for="ISDELETED" class="form-control shadow-sm" />
-                <span asp-validation-for="ISDELETED" class="text-danger"></span>
+                <label for="ISDELETED">Silindi mi?</label>
+                <select asp-for="ISDELETED" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                </select>
             </div>
 
-            <!-- 12. Pasif mi? -->
             <div class="form-group mb-3">
-                <label asp-for="ISPASSIVE" class="control-label">Pasif mi?</label>
-                <input asp-for="ISPASSIVE" class="form-control shadow-sm" />
-                <span asp-validation-for="ISPASSIVE" class="text-danger"></span>
+                <label for="ISPASSIVE">Pasif mi?</label>
+                <select asp-for="ISPASSIVE" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                </select>
             </div>
 
             <!-- 13. İş Merkezi Kısa Açıklaması -->

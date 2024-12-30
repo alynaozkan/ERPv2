@@ -111,6 +111,21 @@
                     <input asp-for="QUANTITY" class="form-control" type="number" step="0.01" />
                     <span asp-validation-for="QUANTITY" class="text-danger"></span>
                 </div>
+                <div class="col-md-6">
+                    <label for="ISDELETED">Silindi mi?</label>
+                    <select asp-for="ISDELETED" class="form-control">
+                        <option value="1">Evet</option>
+                        <option value="0">Hayır</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="ISPASSIVE">Pasif mi?</label>
+                    <select asp-for="ISPASSIVE" class="form-control">
+                        <option value="1">Evet</option>
+                        <option value="0">Hayır</option>
+                    </select>
+                </div>
             </div>
 
             <div class="mt-4 text-center">

@@ -1,5 +1,6 @@
 ﻿@model ERP.Models.Veri.Malzeme.BSMGRNNMMATHEAD
 
+
 @{
     ViewData["Title"] = "Malzeme Kartı Detayları";
 }
@@ -20,7 +21,7 @@
             <dd class="col-sm-8">@Html.DisplayFor(model => model.MATDOCUNTIL)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Tedarik Tipi:</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.SUPPLYTYPE)</dd>
+            <dd class="col-sm-8">@Html.DisplaySupply(Model.SUPPLYTYPE)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Net Ağırlık:</dt>
             <dd class="col-sm-8">@Html.DisplayFor(model => model.NETWEIGHT)</dd>
@@ -30,7 +31,7 @@
 
             <!-- Ürün Ağacı ve Rota Bilgileri -->
             <dt class="col-sm-4 fw-bold text-secondary">Ürün Ağacı Var mı?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISBOM)</dd>
+            <dd class="col-sm-8">@Html.DisplayBom(Model.ISBOM)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Rota Tipi:</dt>
             <dd class="col-sm-8">@Html.DisplayFor(model => model.FROTDOCTYPE.DOCTYPE)</dd>
@@ -68,10 +69,10 @@
 
             <!-- Durum Bilgileri -->
             <dt class="col-sm-4 fw-bold text-secondary">Silindi mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISDELETED)</dd>
+            <dd class="col-sm-8">@Html.DisplayDelete(Model.ISDELETED)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Pasif mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISPASSIVE)</dd>
+            <dd class="col-sm-8">@Html.DisplayPassive(Model.ISPASSIVE)</dd>
         </dl>
     </div>
 </div>

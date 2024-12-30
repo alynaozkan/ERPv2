@@ -39,10 +39,10 @@
             <dd class="col-sm-8">@Html.DisplayFor(model => model.WORKTIME)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Silindi mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISDELETED)</dd>
+            <dd class="col-sm-8">@Html.DisplayDelete(Model.ISDELETED)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Pasif mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISPASSIVE)</dd>
+            <dd class="col-sm-8">@Html.DisplayPassive(Model.ISPASSIVE)</dd>
 
             <!-- Tanım Bilgileri -->
             <dt class="col-sm-4 fw-bold text-secondary">Kısa Tanım:</dt>

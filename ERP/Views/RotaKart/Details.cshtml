@@ -59,6 +59,14 @@
 
             <dt class="col-sm-4 fw-bold text-secondary">İş Merkezi Numarası:</dt>
             <dd class="col-sm-8">@Html.DisplayFor(model => model.WCMDOCNUM)</dd>
+
+            <!-- Durum Bilgileri -->
+            <dt class="col-sm-4 fw-bold text-secondary">Silindi mi?</dt>
+            <dd class="col-sm-8">@Html.DisplayDelete(Model.ISDELETED)</dd>
+
+            <dt class="col-sm-4 fw-bold text-secondary">Pasif mi?</dt>
+            <dd class="col-sm-8">@Html.DisplayPassive(Model.ISPASSIVE)</dd>
+
         </dl>
     </div>
 </div>

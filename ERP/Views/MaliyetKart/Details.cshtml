@@ -25,10 +25,10 @@
             <dd class="col-sm-8">@Html.DisplayFor(model => model.MAINCCMDOCTYPE)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Silindi mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISDELETED)</dd>
+            <dd class="col-sm-8">@Html.DisplayDelete(Model.ISDELETED)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Pasif mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISPASSIVE)</dd>
+            <dd class="col-sm-8">@Html.DisplayPassive(Model.ISPASSIVE)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Kısa Açıklama:</dt>
             <dd class="col-sm-8">@Html.DisplayFor(model => model.CCMSTEXT)</dd>

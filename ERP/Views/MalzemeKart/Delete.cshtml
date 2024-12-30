@@ -20,7 +20,7 @@
             <dd class="col-sm-8">@Html.DisplayFor(model => model.MATDOCUNTIL)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Tedarik Tipi:</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.SUPPLYTYPE)</dd>
+            <dd class="col-sm-8">@Html.DisplaySupply(Model.SUPPLYTYPE)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Net Ağırlık:</dt>
             <dd class="col-sm-8">@Html.DisplayFor(model => model.NETWEIGHT)</dd>
@@ -29,10 +29,10 @@
             <dd class="col-sm-8">@Html.DisplayFor(model => model.BRUTWEIGHT)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Silindi mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISDELETED)</dd>
+            <dd class="col-sm-8">@Html.DisplayDelete(Model.ISDELETED)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Pasif mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISPASSIVE)</dd>
+            <dd class="col-sm-8">@Html.DisplayPassive(Model.ISPASSIVE)</dd>
 
             <dt class="col-sm-4 fw-bold text-secondary">Firma Kodu:</dt>
             <dd class="col-sm-8">@Html.DisplayFor(model => model.FCOMCODE.COMCODE)</dd>

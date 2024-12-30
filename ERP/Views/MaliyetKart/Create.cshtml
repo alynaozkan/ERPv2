@@ -50,13 +50,19 @@
                 <span asp-validation-for="ISDELETED" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ISPASSIVE" class="control-label">Pasif mi?</label>
-                <input asp-for="ISPASSIVE" class="form-control" />
-                <span asp-validation-for="ISPASSIVE" class="text-danger"></span>
+                <label for="ISDELETED">Silindi mi?</label>
+                <select asp-for="ISDELETED" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                </select>
             </div>
+
             <div class="form-group">
-                <label asp-for="LANCODE" class="control-label">Dil Kodu</label>
-                <select asp-for="LANCODE" class="form-control" asp-items="ViewBag.LANCODE"></select>
+                <label for="ISPASSIVE">Pasif mi?</label>
+                <select asp-for="ISPASSIVE" class="form-control">
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                </select>
             </div>
             <div class="form-group">
                 <label asp-for="CCMSTEXT" class="control-label">Maliyet Merkezi Kısa Açıklaması</label>

@@ -35,10 +35,10 @@
             <dd class="col-sm-8">@Html.DisplayFor(model => model.COMPONENT)</dd>
 
             <dt class="col-sm-4">Silindi mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISDELETED)</dd>
+            <dd class="col-sm-8">@Html.DisplayDelete(Model.ISDELETED)</dd>
 
             <dt class="col-sm-4">Pasif mi?</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.ISPASSIVE)</dd>
+            <dd class="col-sm-8">@Html.DisplayPassive(Model.ISPASSIVE)</dd>
 
             <dt class="col-sm-4">Çizim Numarası</dt>
             <dd class="col-sm-8">@Html.DisplayFor(model => model.DRAWNUM)</dd>

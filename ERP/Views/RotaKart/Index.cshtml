@@ -18,14 +18,12 @@
             <th>Rota Numarası</th>
             <th>Geçerlilik Başlangıç</th>
             <th>Geçerlilik Bitiş</th>
+            <th>Temel Miktar</th>
             <th>Çizim Numarası</th>
             <th>Operasyon Numarası</th>
             <th>Kurulum Süresi</th>
             <th>Makine Süresi</th>
             <th>İşçilik Süresi</th>
-            <th>İçerik No</th>
-            <th>Bileşen Kodu</th>
-            <th>Miktar</th>
             <th>Firma Kodu</th>
             <th>Rota Tipi</th>
             <th>Malzeme Numarası</th>
@@ -40,14 +38,12 @@
                 <td>@Html.DisplayFor(modelItem => item.ROTDOCNUM)</td>
                 <td>@Html.DisplayFor(modelItem => item.ROTDOCFROM)</td>
                 <td>@Html.DisplayFor(modelItem => item.ROTDOCUNTIL)</td>
+                <td>@Html.DisplayFor(modelItem => item.QUANTITY)</td>
                 <td>@Html.DisplayFor(modelItem => item.DRAWNUM)</td>
                 <td>@Html.DisplayFor(modelItem => item.OPRNUM)</td>
                 <td>@Html.DisplayFor(modelItem => item.SETUPTIME)</td>
                 <td>@Html.DisplayFor(modelItem => item.MACHINETIME)</td>
                 <td>@Html.DisplayFor(modelItem => item.LABOURTIME)</td>
-                <td>@Html.DisplayFor(modelItem => item.CONTENTNUM)</td>
-                <td>@Html.DisplayFor(modelItem => item.COMPONENT)</td>
-                <td>@Html.DisplayFor(modelItem => item.QUANTITY)</td>
                 <td>@Html.DisplayFor(modelItem => item.FCOMCODE.COMCODE)</td>
                 <td>@Html.DisplayFor(modelItem => item.FROTDOCTYPE.DOCTYPE)</td>
                 <td>@Html.DisplayFor(modelItem => item.MATDOCNUM)</td>

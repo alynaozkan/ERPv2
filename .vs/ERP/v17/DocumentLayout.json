@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Aleyna\\source\\repos\\ERP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|c:\\users\\aleyna\\source\\repos\\erp\\erp\\views\\ismerkeztipi\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|solutionrelative:erp\\views\\ismerkeztipi\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|c:\\users\\aleyna\\source\\repos\\erp\\erp\\views\\ismerkeztipi\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|solutionrelative:erp\\views\\ismerkeztipi\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|c:\\users\\aleyna\\source\\repos\\erp\\erp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|solutionrelative:erp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -27,12 +35,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Views\\IsMerkezTipi\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ERP\\Views\\IsMerkezTipi\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Views\\IsMerkezTipi\\Edit.cshtml",
+              "RelativeToolTip": "ERP\\Views\\IsMerkezTipi\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T12:55:27.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Views\\IsMerkezTipi\\Create.cshtml",
+              "RelativeDocumentMoniker": "ERP\\Views\\IsMerkezTipi\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Views\\IsMerkezTipi\\Create.cshtml",
+              "RelativeToolTip": "ERP\\Views\\IsMerkezTipi\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T12:51:10.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Program.cs",
               "RelativeDocumentMoniker": "ERP\\Program.cs",
               "ToolTip": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Program.cs",
               "RelativeToolTip": "ERP\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T23:26:46.065Z",
               "EditorCaption": ""

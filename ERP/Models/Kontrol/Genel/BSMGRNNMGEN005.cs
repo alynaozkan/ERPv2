@@ -11,10 +11,10 @@ namespace ERP.Models.Kontrol.Genel
         public required string UNITCODE { get; set; } //Birim Kodu
         [MaxLength(80)]
         public required string UNITTEXT { get; set; } //Birim adı
+        [ZeroOrOne]
         public int? ISMAINUNIT { get; set; } //Ana Ağırlık Birimi
 
         [MaxLength(3)]
-        [ZeroOrOne]
         public string? MAINUNITCODE { get; set; } //Ana Birim Kodu
 
         [MaxLength(4)]

@@ -45,9 +45,8 @@
                 <span asp-validation-for="MAINCCMDOCTYPE" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ISDELETED" class="control-label">Silindi mi?</label>
-                <input asp-for="ISDELETED" class="form-control" />
-                <span asp-validation-for="ISDELETED" class="text-danger"></span>
+                <label asp-for="LANCODE" class="control-label">Dil Kodu</label>
+                <select asp-for="LANCODE" class="form-control shadow-sm" asp-items="ViewBag.LANCODE"></select>
             </div>
             <div class="form-group">
                 <label for="ISDELETED">Silindi mi?</label>

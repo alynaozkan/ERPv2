@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Aleyna\\source\\repos\\ERP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|c:\\users\\aleyna\\source\\repos\\erp\\erp\\views\\malzemekart\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|solutionrelative:erp\\views\\malzemekart\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|c:\\users\\aleyna\\source\\repos\\erp\\erp\\controllers\\maliyetkartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|solutionrelative:erp\\controllers\\maliyetkartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|c:\\users\\aleyna\\source\\repos\\erp\\erp\\controllers\\malzemekartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|solutionrelative:erp\\controllers\\malzemekartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|c:\\users\\aleyna\\source\\repos\\erp\\erp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|solutionrelative:erp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D323E9C-F012-42F9-BF99-D7359227B2B1}|ERP\\ERP.csproj|c:\\users\\aleyna\\source\\repos\\erp\\erp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,54 +30,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MaliyetKartController.cs",
-              "DocumentMoniker": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Controllers\\MaliyetKartController.cs",
-              "RelativeDocumentMoniker": "ERP\\Controllers\\MaliyetKartController.cs",
-              "ToolTip": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Controllers\\MaliyetKartController.cs",
-              "RelativeToolTip": "ERP\\Controllers\\MaliyetKartController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwDUAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T17:24:39.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MalzemeKartController.cs",
-              "DocumentMoniker": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Controllers\\MalzemeKartController.cs",
-              "RelativeDocumentMoniker": "ERP\\Controllers\\MalzemeKartController.cs",
-              "ToolTip": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Controllers\\MalzemeKartController.cs",
-              "RelativeToolTip": "ERP\\Controllers\\MalzemeKartController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwDsAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T18:15:31.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Views\\MalzemeKart\\Create.cshtml",
-              "RelativeDocumentMoniker": "ERP\\Views\\MalzemeKart\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Views\\MalzemeKart\\Create.cshtml",
-              "RelativeToolTip": "ERP\\Views\\MalzemeKart\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABcAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ERP\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ERP\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-02T18:08:09.742Z",
+              "WhenOpened": "2025-01-05T17:50:33.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Program.cs",
               "RelativeDocumentMoniker": "ERP\\Program.cs",
               "ToolTip": "C:\\Users\\Aleyna\\source\\repos\\ERP\\ERP\\Program.cs",
               "RelativeToolTip": "ERP\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T23:26:46.065Z"
+              "WhenOpened": "2024-12-30T23:26:46.065Z",
+              "EditorCaption": ""
             }
           ]
         },

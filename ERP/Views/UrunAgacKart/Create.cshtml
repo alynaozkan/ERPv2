@@ -46,6 +46,11 @@
                     <select asp-for="MATDOCTYPE" class="form-select" asp-items="ViewBag.MATDOCTYPE"></select>
                 </div>
                 <div class="col-md-6">
+                    <label asp-for="QUANTITY" class="form-label">Miktar</label>
+                    <input asp-for="QUANTITY" class="form-control" />
+                    <span asp-validation-for="QUANTITY" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
                     <label asp-for="CONTENTNUM" class="form-label">İçerik Numarası</label>
                     <input asp-for="CONTENTNUM" class="form-control" />
                     <span asp-validation-for="CONTENTNUM" class="text-danger"></span>
@@ -77,13 +82,7 @@
                     <span asp-validation-for="DRAWNUM" class="text-danger"></span>
                 </div>
             </div>
-
-        </form>
-    </div>
-</div>
-
-
-            <div class="mt-4 text-center">
+            <div class="form-group text-center mt-4">
                 <button type="submit" class="btn btn-success btn-lg shadow-sm">
                     <i class="fas fa-save"></i> Oluştur
                 </button>
@@ -91,8 +90,9 @@
                     <i class="fas fa-arrow-left"></i> Listeye Geri Dön
                 </a>
             </div>
-<
-
+        </form>
+    </div>
+</div>
 
 
 @section Scripts {

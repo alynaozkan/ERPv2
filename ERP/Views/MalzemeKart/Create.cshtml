@@ -12,11 +12,11 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
             <div class="row g-3">
-            <div class="col-md-6">
-                <label asp-for="COMCODE" class="form-label">Firma Kodu</label>
-                <select asp-for="COMCODE" class="form-select" asp-items="ViewBag.COMCODE"></select>
-            </div>
-
+                <div class="col-md-6">
+                    <label asp-for="COMCODE" class="form-label">Firma Kodu</label>
+                    <select asp-for="COMCODE" class="form-select" asp-items="ViewBag.COMCODE"></select>
+                    <span asp-validation-for="COMCODE" class="text-danger"></span>
+                </div>
             <div class="col-md-6">
                 <label asp-for="MATDOCNUM" class="form-label">Malzeme Kodu</label>
                 <input asp-for="MATDOCNUM" class="form-control" />
